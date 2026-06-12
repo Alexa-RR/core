@@ -16,10 +16,8 @@ from yoto_api import (
     Group,
     PlaybackEvent,
     PlaybackStatus,
-    PlayerExtendedStatus,
     PlayerInfo,
     PlayerStatus,
-    PowerSource,
     Track,
     YotoPlayer,
 )
@@ -97,11 +95,6 @@ def _build_player() -> YotoPlayer:
         battery_level_percentage=75,
         card_insertion_state=CardInsertionState.PHYSICAL,
         day_mode=DayMode.DAY,
-    )
-    player.extended_status = PlayerExtendedStatus(
-        power_source=PowerSource.USB_C,
-        network_ssid="HomeNet",
-        wifi_strength=-55,
     )
     player.last_event = PlaybackEvent(
         player_id=PLAYER_ID,
