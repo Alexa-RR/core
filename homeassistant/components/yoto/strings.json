@@ -36,6 +36,16 @@
       }
     }
   },
+  "entity": {
+    "binary_sensor": {
+      "bluetooth_audio": {
+        "name": "Bluetooth audio"
+      },
+      "headphones": {
+        "name": "Headphones"
+      }
+    }
+  },
   "exceptions": {
     "authentication_failed": {
       "message": "Yoto credentials are no longer valid. Please reauthenticate your account."

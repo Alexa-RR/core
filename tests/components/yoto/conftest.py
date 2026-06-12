@@ -15,6 +15,7 @@ from yoto_api import (
     PlaybackEvent,
     PlaybackStatus,
     PlayerInfo,
+    PlayerStatus,
     Track,
     YotoPlayer,
 )
@@ -87,6 +88,11 @@ def _build_player() -> YotoPlayer:
     player.info = PlayerInfo(
         firmware_version="v2.17.5",
         mac="aa:bb:cc:dd:ee:ff",
+    )
+    player.status = PlayerStatus(
+        is_charging=True,
+        is_audio_device_connected=False,
+        is_bluetooth_audio_connected=False,
     )
     player.last_event = PlaybackEvent(
         player_id=PLAYER_ID,

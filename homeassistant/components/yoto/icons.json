@@ -1,0 +1,12 @@
+{
+  "entity": {
+    "binary_sensor": {
+      "bluetooth_audio": {
+        "default": "mdi:bluetooth-audio"
+      },
+      "headphones": {
+        "default": "mdi:headphones"
+      }
+    }
+  }
+}
